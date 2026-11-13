@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Lightbox Gallery 🖼️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-card">
+        <!-- Header -->
+        <header class="app-header">
+            <span class="badge">kikisaja No. 141</span>
+            <h1>🖼️ LIGHTBOX GALLERY</h1>
+            <p>Klik salah satu foto di bawah untuk melihat tampilan penuhnya!</p>
+        </header>
+
+        <!-- Galeri Foto Grid -->
+        <div class="gallery-grid" id="gallery-grid">
+            <!-- Item Galeri 1 -->
+            <div class="gallery-item" data-index="0" data-caption="Pemandangan Senja Pantai Kuta 🌅">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80" alt="Pantai">
+                <span class="item-title">Pantai Sunset</span>
+            </div>
+            <!-- Item Galeri 2 -->
+            <div class="gallery-item" data-index="1" data-caption="Keindahan Pegunungan Hijau Di pagi hari ⛰️">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=400&q=80" alt="Gunung">
+                <span class="item-title">Pegunungan Asri</span>
+            </div>
+            <!-- Item Galeri 3 -->
+            <div class="gallery-item" data-index="2" data-caption="Suasana Malam Kota Metropolitan yang Berkilau 🌃">
+                <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=400&q=80" alt="Kota">
+                <span class="item-title">City Lights</span>
+            </div>
+            <!-- Item Galeri 4 -->
+            <div class="gallery-item" data-index="3" data-caption="Hutan Pinus Sejuk Menenangkan Pikiran 🌲">
+                <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=400&q=80" alt="Hutan">
+                <span class="item-title">Hutan Pinus</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL LIGHTBOX OVERLAY -->
+    <div class="lightbox-modal" id="lightbox-modal">
+        <button type="button" class="btn-close" id="btn-close">✕</button>
+        <button type="button" class="btn-nav prev" id="btn-prev">❮</button>
+        
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Lightbox Zoom">
+            <p id="lightbox-caption" class="lightbox-caption">Deskripsi Foto</p>
+        </div>
+
+        <button type="button" class="btn-nav next" id="btn-next">❯</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
